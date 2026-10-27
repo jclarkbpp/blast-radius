@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="boomshine clone">
+    <title>HTML5 Game</title>
+    <script src="js/game.js" defer></script>
+</head>
+<body>
+    <!-- GAME OVER MODAL -->
+    <div id = "gameOverModal" style = "display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+    background: rgba(0, 0, 0, 0.5); text-align: center; padding-top: 100px;">
+        <div style = "background: white; display: inline-block; padding: 20px; border-radius: 10px;">
+            <h2 id = "gameOverMessage"></h2>
+            <p id = "finalScore"></p>
+            <button onclick="location.reload()">Play Again</button>
+        </div>
+    </div>
+
+    <!-- CANVAS HERE -->
+    <canvas id = "canvas" width = "750" height = "400" style = "border:1px solid lightgrey;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+</body>
+</html>
