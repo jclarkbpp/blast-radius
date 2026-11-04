@@ -1,2 +1,10 @@
+# Node.js
 node_modules/
 .env
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
