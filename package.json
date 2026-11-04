@@ -1,10 +1,11 @@
+
 {
   "name": "blast-radius",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Blast Radius JavaScript game",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "test:run": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -13,5 +14,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module",
+  "devDependencies": {
+    "vitest": "^5.1.0"
+  }
 }
