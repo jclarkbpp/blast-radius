@@ -44,8 +44,7 @@ describe("Game", () => {
 
         game.click(100, 100);
 
-        //expect(game.score).toBe(1);
-        expect(game.score).toBe(5);
+        expect(game.score).toBe(1);
         expect(circle.isExploding).toBe(true);
         expect(game.numActiveExplosions).toBe(1);
     });
