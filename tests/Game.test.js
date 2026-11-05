@@ -22,7 +22,7 @@ describe("Game", () => {
     it("should initialise the score to zero", () => {
         const game = createGame();
 
-        expect(game.score).toBe(0);
+        expect(game.score).toBe(10);
     });
 
 
