@@ -14,8 +14,14 @@ variable "cloudflare_account_id" {
 
 provider "cloudflare" {}
 
-resource "cloudflare_pages_project" "blast_radius" {
+resource "cloudflare_pages_project" "blast_radius_practice" {
   account_id        = var.cloudflare_account_id
   name              = "blast-radius-practice"
+  production_branch = "main"
+}
+
+resource "cloudflare_pages_project" "blast_radius" {
+  account_id        = var.cloudflare_account_id
+  name              = "blast-radius"
   production_branch = "main"
 }
