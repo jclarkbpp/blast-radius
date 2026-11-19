@@ -14,11 +14,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy public --project-name=blast-radius-practice --branch=main
+        run: npx wrangler pages deploy public --project-name=blast-radius --branch=main
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       
       - name: Smoke test production deployment
         run: |
-          curl --fail --silent --show-error https://blast-radius-practice.pages.dev/ > /dev/null
+          curl --fail --silent --show-error https://blast-radius-e0n.pages.dev/ > /dev/null
